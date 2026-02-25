@@ -23,6 +23,7 @@ public class main {
 
                 if (i == 4) {
                     System.out.println("acabou suas tentativas");
+                    System.out.println("o numero era "+escolhaCpu);
                     break;
                 }
 
@@ -35,7 +36,7 @@ public class main {
 
                 if (escolhaJogador == escolhaCpu) {
                     System.out.println("voce ganhou");
-                    contador[escolhaJogador] = escolhaJogador + " acertou";
+                    contador[escolhaJogador] = escolhaJogador + "=";
                     System.out.println(Arrays.toString(contador));
                     break;
                 } else if (escolhaJogador < escolhaCpu) {
@@ -54,6 +55,7 @@ public class main {
             byte continuar = scanner.nextByte();
             if (continuar == 1) {
                 jogar = true;
+                System.out.println("começou");
             } else {
                 jogar = false;
             }
